@@ -1,0 +1,105 @@
+:root {
+    --aero-blue: #c7f0f739;
+    --aero-green: #c5fdaa;
+    --aero-white: #ffffff;
+    --aero-yellow: #fff9a5;
+    --aero-sky: #87ceeb;
+    --aero-letters: rgb(35, 35, 71);
+    --aero-night: #4e7788fe;
+}
+
+body {
+    background-image: url('fondoPantalla.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth; /* Mueve esta propiedad aquí */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0;
+}
+
+.scroll-container {
+    display: block;
+    font-family: 'Segoe UI', 'Trebuchet MS', 'Verdana', sans-serif;
+    font-weight: 400;
+    color: var(--aero-letters);
+    width: 80%;
+    max-height: 520px;
+    overflow-y: auto;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid var(--aero-white);
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--aero-blue), var(--aero-sky), var(--aero-green));
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: linear-gradient(135deg, var(--aero-night),var(--aero-sky),var(--aero-blue));
+    border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: var(--aero-white);
+    border-radius: 10px;
+    border: 2px solid var(--aero-white);
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: var(--aero-sky); /* Cambia el color al pasar el mouse */
+    border: 2px solid var(--aero-blue); /* Cambia también el borde */
+}
+
+.encabezado {
+    color: var(--aero-letters);
+    font-family: 'Segoe UI', 'Trebuchet MS', 'Verdana', sans-serif;
+    font-weight: 400;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: var(--aero-white);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, var(--aero-blue), var(--aero-sky));
+    text-align: center;
+    opacity: 0.9;
+}
+
+.fotocont {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 200px; /* Ajusta dinámicamente según el contenido */
+}
+
+.lista {
+    color: var(--aero-letters);
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    border-radius: 9px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, var(--aero-blue), var(--aero-sky),var);
+    opacity: 0.9;
+}
+li{
+    list-style: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 20px;
+    background-color: var(--aero-sky);
+    color: var(--aero-letters);
+    transition: background-color 0.3s ease;
+    opacity: 0.7;
+}
+
+li:hover {
+    background-color: var(--aero-blue);
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.texto{
+    text-align: justify;
+}

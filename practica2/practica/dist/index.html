@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio - Jostin Delgado</title>
+  <link rel="stylesheet" crossorigin href="/ClaseASW4a/assets/index-DeFAEMY4.css">
+</head>
+<body class="bg-gradient-to-r from-cyan-900 to-blue-900 text-white font-sans">
+
+  <div class="grid grid-cols-5 min-h-screen">
+    
+    <!-- Sidebar -->
+    <aside class="col-span-1 bg-cyan-800 p-4 flex flex-col gap-4">
+      <div class="text-center">
+        <h2 class="text-xl font-bold">Mi Marca</h2>
+        <p class="text-sm">Jostin Delgado</p>
+      </div>
+      <nav class="flex flex-col gap-2">
+        <a href="#inicio" class="hover:bg-cyan-600 p-2 rounded">Inicio</a>
+        <a href="#habilidades" class="hover:bg-cyan-600 p-2 rounded">Habilidades</a>
+        <a href="#portfolio" class="hover:bg-cyan-600 p-2 rounded">Portafolio</a>
+        <a href="#contacto" class="hover:bg-cyan-600 p-2 rounded">Contacto</a>
+      </nav>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="col-span-4 p-8 grid gap-8 grid-rows-auto auto-rows-max">
+
+      <!-- Encabezado -->
+      <header id="inicio" class="text-center bg-cyan-700 p-6 rounded shadow-lg">
+        <h1 class="text-3xl font-bold mb-2">Hola, soy Jostin Manuel Delgado Cuadros</h1>
+        <p class="text-lg">Bienvenido a mi portafolio profesional</p>
+        <img src="/ClaseASW4a/assets/prueba1-8kpBiZss.jpg" alt="Foto de perfil" class="mx-auto mt-4 rounded-full w-40 h-40 object-cover border-4 border-white">
+      </header>
+
+      <!-- Dashboard - Bloques de contenido en Grid -->
+      <section id="portfolio" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white text-black p-4 rounded-lg shadow-md">
+          <h3 class="font-semibold text-xl mb-2">Lenguajes</h3>
+          <ul class="list-disc list-inside">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+            <li>C#</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+        <div class="bg-white text-black p-4 rounded-lg shadow-md">
+          <h3 class="font-semibold text-xl mb-2">Herramientas</h3>
+          <ul class="list-disc list-inside">
+            <li>Git / GitHub</li>
+            <li>Visual Studio</li>
+            <li>MySQL / PostgreSQL</li>
+            <li>Render</li>
+            <li>VirtualBox</li>
+          </ul>
+        </div>
+        <div class="bg-white text-black p-4 rounded-lg shadow-md">
+          <h3 class="font-semibold text-xl mb-2">Otras Habilidades</h3>
+          <ul class="list-disc list-inside">
+            <li>Resolución de problemas</li>
+            <li>Trabajo en equipo</li>
+            <li>Mecanografía</li>
+            <li>Comunicación efectiva</li>
+            <li>Adaptabilidad</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Formulario de contacto -->
+      <section id="contacto" class="bg-cyan-700 p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold mb-4">Contacto</h2>
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" placeholder="Nombre" required class="p-2 rounded bg-white text-black" />
+          <input type="email" placeholder="Correo" required class="p-2 rounded bg-white text-black" />
+          <input type="number" placeholder="Teléfono" required class="p-2 rounded bg-white text-black" />
+          <select class="p-2 rounded bg-white text-black">
+            <option disabled selected>Selecciona una opción</option>
+            <option>Consulta</option>
+            <option>Colaboración</option>
+            <option>Oferta laboral</option>
+          </select>
+          <textarea placeholder="Mensaje" rows="4" class="md:col-span-2 p-2 rounded bg-white text-black"></textarea>
+          <button type="submit" class="md:col-span-2 bg-white text-cyan-900 font-bold p-2 rounded hover:bg-cyan-100 transition">Enviar</button>
+        </form>
+      </section>
+
+      <!-- Pie de página -->
+      <footer class="text-center py-4 border-t border-cyan-600">
+        <p>© 2025 Jostin Delgado - Todos los derechos reservados</p>
+      </footer>
+
+    </main>
+  </div>
+
+</body>
+</html>
